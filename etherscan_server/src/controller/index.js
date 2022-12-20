@@ -1,5 +1,5 @@
-const accounts = require("./accounts.js");
+const accountsController = require("./accounts.js");
 
 module.exports = {
-    accounts
+    accountsController
 }
