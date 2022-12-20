@@ -8,3 +8,5 @@ const transactionsRouter = require("./transactions.js");
 router.use("/accounts", accountsRouter);
 router.use("/contracts", contractsRouter);
 router.use("/transactions", transactionsRouter)
+
+module.exports = router;
