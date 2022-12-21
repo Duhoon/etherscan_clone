@@ -2,7 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        dropdown: "dropdown 500ms normal",
+      },
+      keyframes: {
+        dropdown: {
+          "0%": { transform: "translateY(5px)", opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+    },
     colors: {
       blue: "#1fb6ff",
       purple: "#7e5bef",
